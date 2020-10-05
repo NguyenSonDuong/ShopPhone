@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView android:layout_width="match_parent"
+              android:text="Tên điện thoại"
+              android:textColor="#000"
+              android:textSize="18sp"
+              android:padding="10dp"
+              android:id="@+id/tvName"
+              android:layout_margin="10dp"
+              android:layout_height="wrap_content"></TextView>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:padding="10dp"
+                  android:background="@drawable/vien"
+    >
+
+
+        <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vpDacDiem"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      android:layout_marginLeft="20dp"
+        >
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+
+                <TextView android:layout_width="wrap_content"
+                          android:text="13.000.000"
+                          android:textColor="#780604"
+                          android:textSize="16sp"
+                          android:id="@+id/tvGia"
+                          android:textStyle="bold"
+                          android:padding="7dp"
+                          android:layout_height="wrap_content"></TextView>
+
+                <TextView android:layout_width="wrap_content"
+                          android:text="Trả góp 0%"
+                          android:textColor="#000"
+                          android:textSize="12dp"
+                          android:layout_marginLeft="15dp"
+                          android:background="#FDD835"
+                          android:layout_height="wrap_content"
+                          android:layout_marginBottom="15dp"
+                />
+            </LinearLayout>
+
+            <TextView android:layout_width="match_parent"
+                      android:text="@string/KhuyenMai"
+                      android:padding="5dp"
+                      android:textColor="#000"
+                      android:gravity="center"
+                      android:id="@+id/tvKM"
+                      android:layout_height="wrap_content"></TextView>
+
+            <Button android:layout_width="match_parent"
+                    android:text="Mua ngay"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_dat_hang"
+                    android:id="@+id/btMuaHang"
+                    android:textColor="#fff"
+            ></Button>
+                <Button android:layout_width="match_parent"
+                        android:text="Mua TRẢ GÓP"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_tra_gop"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#fff"
+                        android:id="@+id/btTraGop"
+                >
+                </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+
+        <TextView android:layout_width="match_parent"
+                  android:text="@string/thongSo"
+                  android:textColor="#000"
+                  android:textSize="17sp"
+                  android:padding="5dp"
+                  android:textStyle="bold"
+                  android:layout_margin="10dp"
+                  android:layout_height="match_parent"></TextView>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:weightSum="5"
+                          android:padding="6dp"
+                          android:layout_height="wrap_content">
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="2"
+                          android:text="Màn hình:"
+                          android:textSize="15sp"
+                          android:padding="5dp"
+                          android:gravity="center"
+                          android:textColor="#000"
+                          android:layout_height="match_parent"></TextView>
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="3"
+                          android:text="AMOLED, 6.39, Full HD+"
+                          android:paddingLeft="10dp"
+                          android:id="@+id/tvManHinh"
+                          android:padding="5dp"
+                          android:textSize="15sp"
+                          android:textColor="#000"
+                          android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:weightSum="5"
+                          android:padding="6dp"
+                          android:layout_height="wrap_content">
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="2"
+                          android:text="Hệ điều hành:"
+                          android:textSize="15sp"
+                          android:padding="5dp"
+                          android:gravity="center"
+                          android:textColor="#000"
+                          android:layout_height="match_parent"></TextView>
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="3"
+                          android:text="Android 9 (Pie)"
+                          android:textSize="15sp"
+                          android:id="@+id/tvHeDH"
+                          android:textColor="#000"
+                          android:paddingLeft="10dp"
+                          android:padding="5dp"
+                          android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:weightSum="5"
+                          android:padding="6dp"
+                          android:layout_height="wrap_content">
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="2"
+                          android:text="Camera sau:"
+                          android:textSize="15sp"
+                          android:gravity="center"
+                          android:textColor="#000"
+                          android:layout_height="match_parent"></TextView>
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="3"
+                          android:text="Chính 48 MP Phụ 8 MP, 2 MP"
+                          android:textSize="15sp"
+                          android:paddingLeft="10dp"
+                          android:padding="5dp"
+                          android:textColor="#000"
+                          android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:weightSum="5"
+                          android:padding="6dp"
+                          android:layout_height="wrap_content">
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="2"
+                          android:text="Camera trước:"
+                          android:textSize="15sp"
+                          android:gravity="center"
+                          android:textColor="#000"
+                          android:layout_height="match_parent"></TextView>
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="3"
+                          android:text="16 MP"
+                          android:textSize="15sp"
+                          android:textColor="#000"
+                          android:paddingLeft="10dp"
+                          android:padding="5dp"
+                          android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:weightSum="5"
+                          android:padding="6dp"
+                          android:layout_height="wrap_content">
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="2"
+                          android:text="CPU:"
+                          android:textSize="15sp"
+                          android:gravity="center"
+                          android:textColor="#000"
+                          android:layout_height="match_parent"></TextView>
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="3"
+                          android:text="MediaTek Helio P60 8 nhân"
+                          android:textSize="15sp"
+                          android:textColor="#000"
+                          android:id="@+id/tvCPU"
+                          android:paddingLeft="10dp"
+                          android:padding="5dp"
+                          android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:weightSum="5"
+                          android:padding="6dp"
+                          android:layout_height="wrap_content">
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="2"
+                          android:text="RAM:"
+                          android:textSize="15sp"
+                          android:gravity="center"
+                          android:textColor="#000"
+                          android:layout_height="match_parent"></TextView>
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="3"
+                          android:text="12 GB"
+                          android:textSize="15sp"
+                          android:textColor="#000"
+                          android:paddingLeft="10dp"
+                          android:padding="5dp"
+                          android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:weightSum="5"
+                          android:padding="6dp"
+                          android:layout_height="wrap_content">
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="2"
+                          android:text="Bộ nhớ trong:"
+                          android:textSize="15sp"
+                          android:gravity="center"
+                          android:textColor="#000"
+                          android:layout_height="match_parent"></TextView>
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="3"
+                          android:text="256 GB"
+                          android:textSize="15sp"
+                          android:textColor="#000"
+                          android:paddingLeft="10dp"
+                          android:padding="5dp"
+                          android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:weightSum="5"
+                          android:padding="6dp"
+                          android:layout_height="wrap_content">
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="2"
+                          android:text="Thẻ nhớ:"
+                          android:textSize="15sp"
+                          android:gravity="center"
+                          android:textColor="#000"
+                          android:layout_height="match_parent"></TextView>
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="3"
+                          android:text="MicroSD, hỗ trợ tối đa 256 GB"
+                          android:textSize="15sp"
+                          android:textColor="#000"
+                          android:paddingLeft="10dp"
+                          android:padding="5dp"
+                          android:id="@+id/tvTheNhơ"
+                          android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:weightSum="5"
+                          android:padding="6dp"
+                          android:layout_height="wrap_content">
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="2"
+                          android:text="Thẻ sim:"
+                          android:textSize="15sp"
+                          android:gravity="center"
+                          android:textColor="#000"
+                          android:layout_height="match_parent"></TextView>
+
+                <TextView android:layout_width="0dp"
+                          android:layout_weight="3"
+                          android:text="@string/theSim"
+                          android:textSize="15sp"
+                          android:textColor="#000"
+                          android:id="@+id/tvTheSim"
+                          android:paddingLeft="10dp"
+                          android:padding="5dp"
+                          android:layout_height="match_parent"></TextView>
+            </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:weightSum="5"
+                      android:padding="6dp"
+                      android:layout_height="wrap_content">
+
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="2"
+                      android:text="Dung lượng pin:"
+                      android:textSize="15sp"
+                      android:gravity="center"
+                      android:textColor="#000"
+                      android:layout_height="match_parent"></TextView>
+
+            <TextView android:layout_width="0dp"
+                      android:layout_weight="3"
+                      android:text="4020 mAh, có sạc nhanh"
+                      android:textSize="15sp"
+                      android:textColor="#000"
+                      android:paddingLeft="10dp"
+                      android:padding="5dp"
+                      android:layout_height="match_parent"></TextView>
+        </LinearLayout>
+
+
+        <Button android:layout_width="match_parent"
+                android:background="@drawable/edit_tra_gop"
+                android:text="Xem cấu hình chi tiết"
+                android:id="@+id/btCauHinhChiTiet"
+                android:textColor="#FFF"
+                android:layout_height="wrap_content"></Button>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

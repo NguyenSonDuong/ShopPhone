@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        >
+
+        <item
+            android:id="@+id/itemTrangChu"
+            android:title="Trang chủ"
+            android:icon="@drawable/ic_home"/>
+        <item
+            android:id="@+id/itemHangDienThoai"
+            android:title="Hãng điện thoại"
+            android:icon="@drawable/ic_confirmation"/>
+
+        <item
+            android:id="@+id/itemLienHe"
+            android:title="Liên hệ"
+            android:icon="@drawable/ic_contacts"/>
+
+
+    </group>
+
+    <group
+        android:id="@+id/group2">
+
+        <item
+            android:id="@+id/itemThongTin"
+            android:title="Thông tin"
+            android:icon="@drawable/ic_info" />
+        <item
+            android:id="@+id/itemCaiDat"
+            android:title="Cài đặt"
+            android:icon="@drawable/ic_settings"
+            />
+    </group>
+
+    <group
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/itemShare"
+            android:title="Chia sẻ"
+            android:icon="@drawable/ic_baseline_share_24"
+            />
+        <item
+            android:id="@+id/itemDangXuat"
+            android:title="Đăng xuất"
+            android:icon="@drawable/ic_power_settings"/>
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:id="@+id/lnToolBar"
+              android:layout_height="match_parent" >
+
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/tbHome"
+            android:background="#fa5030"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#fa5030"
+                android:layout_height="wrap_content"
+                android:padding="6dp">
+            <ImageView
+                    android:id="@+id/ivMenu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_menu_24"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+
+            <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:background="#EFECEC"
+                    android:layout_marginLeft="10dp">
+
+                <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_search"
+                        android:layout_gravity="left"></ImageView>
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:textSize="15sp"
+                        android:background="@drawable/edittext"
+                        android:hint="Tìm kiếm trên phone shop"></EditText>
+            </LinearLayout>
+
+
+
+            <ImageView
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/ivCart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_shopping_cart_24"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>

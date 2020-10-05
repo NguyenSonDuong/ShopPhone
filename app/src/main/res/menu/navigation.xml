@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/itemTrangChu"
+        android:title="Trang chủ"
+        android:icon="@drawable/ic_home"/>
+
+
+    <item
+        android:id="@+id/itemTinTuc"
+        android:title="Tin tức"
+        android:icon="@drawable/ic_new_releases_24"/>
+
+    <item
+        android:id="@+id/itemThongBao"
+        android:title="Thông báo"
+        android:icon="@drawable/ic_notifications_none"/>
+
+    <item
+        android:id="@+id/itemPeople"
+        android:title="Tôi"
+        android:icon="@drawable/ic_people"/>
+
+</menu>
